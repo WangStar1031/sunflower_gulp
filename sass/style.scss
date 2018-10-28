@@ -1,0 +1,512 @@
+$primaryColor: #000;
+$background: url('../img/background.jpg');
+$overlay: rgba(171,233,217,.7);
+$text: #000;
+$secondaryColor: #FB7899;
+$font: 'Dosis', sans-serif;
+$outline: rgba(241,158,151,1);
+
+
+.transitionTime {
+  transition-duration: 1.2s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #000;
+}
+
+body {
+  font-family: $font;
+  /* font-weight: 700; */
+  text-align: center;
+	height: 100%;
+	margin: auto;
+  background-image: $background;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+.box {
+  position: absolute;
+  color: $primaryColor;
+  background-color: $overlay;
+}
+
+.box-table {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  z-index: 99;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scale(.01, .01);
+  -webkit-transform: scale(.01, .01);
+  -moz-transform: scale(.01, .01);
+  -ms-transform: scale(.01, .01);
+  -o-transform: scale(.01, .01);
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+.page-name {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  // padding: 7px;
+}
+
+.hover-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  z-index: 98;
+}
+
+#uno {
+  bottom: 20%;
+  left: 0;
+  right: 20%;
+  top: 0;
+  border-bottom: 3px solid $outline;
+  border-right: 3px solid $outline;
+}
+
+#uno .content {
+  z-index: 100;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0); /* Safari & Chrome */
+  -moz-transform: matrix(1, 0, 0, 1, 0, 0); /* Firefox */
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0); /* Internet Explorer */
+  -o-transform: matrix(1, 0, 0, 1, 0, 0);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12%;
+}
+
+#uno .hover-text {
+  // display: none;
+}
+
+#dos {
+  bottom: 20%;
+  left: 80%;
+  right: 0;
+  top: 0;
+  border-bottom: 3px solid $outline;
+}
+
+
+#tres {
+  bottom: 0;
+  left: 80%;
+  right: 0;
+  top: 80%;
+}
+
+#tres .content {
+  padding: 12% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#cuatro {
+  bottom: 0;
+  left: 0;
+  right: 20%;
+  top: 80%;
+  border-right: 3px solid $outline;
+}
+
+
+// MUSIC
+
+#music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+#music a {
+  border: none;
+  // max-width: 400px;
+  // max-height: 400px;
+  min-width: 400px;
+  min-height: 400px;
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#music img {
+  padding: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s;
+}
+
+#music img {
+  transition: 0.5s;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
+
+#music img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+#music iframe {
+  background-color: white;
+  padding: 15px;
+  border: none;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+
+// VIDEO
+
+#video {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video iframe {
+  border: 10px solid $primaryColor;
+  position: absolute;
+  width: 800px;
+  height: 450px;
+}
+
+
+// TOUR
+
+// #tour {
+//   height: 350px;
+//   width: 800px;
+//   overflow: scroll;
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   scroll-behavior: auto;
+// }
+
+
+#tour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+#tour .poster a {
+  border: none;
+  min-width: 350px;
+  min-height: 350px;
+  width: 350px;
+  height: 350px;
+  margin-right: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tour .poster img {
+  padding: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s;
+}
+
+#tour .poster img {
+  transition: 0.5s;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
+
+#tour .poster img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+#tour .tour-dates {
+  margin-left: 20px;
+  height: 350px;
+  min-width: 280px;
+  max-width: 280px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+#tour .tour-dates ul {
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 0;
+}
+
+#tour .tour-dates li {
+  // border: 1px solid red;
+  text-decoration: none;
+  display: inline;
+}
+
+#tour .tour-dates li a {
+  padding: 5px;
+  font-weight: bold;
+  background-color: $outline;
+  text-decoration: none;
+  color: $primaryColor;
+  transition: 0.4s;
+  letter-spacing: 2px;
+  // padding: 5px;
+  transition: 0.5s;
+  // margin: 0 5px;
+}
+
+#tour .tour-dates li a:hover {
+ background-color: $primaryColor;
+ color: $outline;
+}
+
+
+// MERCH
+
+#merch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+#merch .merch-photos a {
+  border: none;
+  min-width: 400px;
+  min-height: 400px;
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#merch .merch-photos img {
+  max-width: 100%;
+  max-height: 100%;
+  // padding: 5%;
+  transition: 0.5s;
+}
+#merch .merch-photos img{
+  transition: 0.5s;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
+
+#merch .merch-photos img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+#merch .merch-info {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  min-width: 300px;
+  min-height: 400px;
+  max-width: 300px;
+  max-height: 400px;
+  text-align: left;
+  padding-left: 1%;
+}
+
+#merch h1 {
+  margin: 8px 0;
+  text-transform: uppercase;
+  font-size: 23px;
+}
+
+#merch h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+
+#merch .merch-info a {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 17px;
+  width: fit-content;
+  background-color: $outline;
+  text-decoration: none;
+  color: $primaryColor;
+  transition: 0.4s;
+  letter-spacing: 2px;
+  padding: 2% 3%;
+}
+
+#merch .merch-info a:hover {
+  background-color: $primaryColor;
+  color: $outline;
+}
+
+
+#merch p {
+  margin: 15px 0;
+  text-align: left;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+
+/* CONTACT */
+
+#contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#contact p {
+ font-size: 20px;
+ line-height: 30px;
+ margin-bottom: 60px;
+ color: $text;
+ text-transform: uppercase;
+ letter-spacing: 0.1rem;
+ font-weight: bold;
+}
+
+#contact .email a {
+  background-color: $outline;
+  text-decoration: none;
+  color: $primaryColor;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+#contact .email a:hover, a:focus {
+ background-color: $primaryColor;
+ color: $outline;
+}
+
+#contact .social {
+  margin-top: 50px;
+  width: 800px;
+}
+
+#contact .social a {
+  display: inline-block;
+  margin: 20px;
+  font-size: 25px;
+  line-height: 45px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  text-align: center;
+  color: $primaryColor;
+  background-color: $outline;
+}
+
+#contact .social a:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+
+#contact .soundcloud:hover {
+  color: #FF3300;
+}
+
+#contact .bandcamp:hover  {
+  color: #629AA9;
+}
+
+#contact .tumblr:hover {
+  color: #35465C;
+}
+
+#contact .facebook:hover {
+  color: #3b5998;
+}
+
+#contact .mail:hover {
+  color: $outline;
+  background-color: $primaryColor!important;
+}
+
+#contact .youtube:hover {
+  color: #ff0000;
+}
+
+#contact .spotify:hover {
+  color: #1db954;
+}
+
+#contact .whatsapp:hover {
+  color: #128c7e;
+}
+
+#contact .instagram:hover {
+  color: #833ab4;
+}
+
+#contact .twitter:hover {
+  color: #1da1f2;
+}
+
+#contact .messenger:hover {
+  color: #0084ff;
+}
+
+#contact .apple:hover {
+  color: grey;
+}

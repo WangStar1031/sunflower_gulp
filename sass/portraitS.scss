@@ -1,0 +1,223 @@
+@media screen and (max-width: 374px) and (orientation: portrait) {
+
+
+  .hover-text {
+    z-index: 99;
+  }
+
+  .content {
+    z-index: 98;
+  }
+
+  .page-name {
+    font-size: 15px;
+  }
+
+  .box {
+    display: block;
+    width: 100%;
+    height: 12%;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  #uno {
+    height: 64%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid $outline;
+    border-right: none;
+  }
+
+  #uno .box-table {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  #uno .content {
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+  }
+
+  #dos {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 1px solid $outline;
+    border-bottom: 1px solid $outline;
+  }
+
+  #dos .content {
+    z-index: 100;
+    // opacity: 1;
+  }
+
+  #tres {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 1px solid $outline;
+    border-bottom: 1px solid $outline;
+  }
+
+  #tres .content {
+    // height: 100%;
+    // width: 100%;
+    z-index: 100;
+    padding: 0;
+  }
+
+  #cuatro {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 1px solid $outline;
+    border-right: none;
+  }
+
+
+
+// MUSIC
+
+  #music {
+    height: 100%;
+    width: 100%;
+  }
+
+  #music a {
+    display: none;
+  }
+
+  #music iframe {
+    border: red;
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+
+// VIDEO
+  #video iframe {
+    border: 8px solid $primaryColor;
+    width: 280px;
+    height: 280px;
+  }
+
+//TOUR
+
+#tour li {
+  display: inline-block;
+}
+
+// MERCH
+
+  #merch {
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    flex-direction: column;
+  }
+
+  #merch .merch-photos {
+    // border: 2px solid purple;
+  }
+
+  #merch .merch-photos a {
+    margin: 0;
+    max-width: 210px;
+    max-height: 210px;
+    min-width: 210px;
+    min-height: 210px;
+    background-color: white;
+  }
+
+  #merch .merch-photos img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+
+  #merch .merch-photos img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+
+  #merch .merch-info {
+    min-height: fit-content;
+    min-width: fit-content;
+    align-items: center;
+  }
+
+  #merch .merch-info h1 {
+    font-size: 17px;
+    margin: 11px 0;
+  }
+
+  #merch .merch-info h2 {
+    display: none;
+  }
+
+  #merch .merch-info p {
+    display: none;
+  }
+
+  #merch .merch-info a {
+    margin: 0;
+    font-size: 17px;
+  }
+
+
+// CONTACT
+
+  #contact {
+    // padding: 5%;
+    // width: 100%;
+  }
+
+  #contact  p {
+      display: none;
+    }
+
+  #contact .mail {
+    display: none;
+  }
+
+  #contact .social {
+    min-width: 380px;
+    max-width: 380px;
+    // height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact .social a {
+    margin: 5px;
+    color: $primaryColor;
+    transition: 0.5s;
+    font-size: 30px;
+  }
+
+  #contact .social i {
+    border-radius: 50%;
+    background-color: $outline;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+}

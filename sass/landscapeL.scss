@@ -1,0 +1,41 @@
+
+@media screen and (min-width:768px) and(max-width:1025px) and (orientation: landscape) {
+
+  #music a {
+    display: none;
+  }
+
+  #merch .merch-photos a {
+    max-width: 320px;
+    max-height: 320px;
+    min-width: 320px;
+    min-height: 320px;
+  }
+
+  #merch .merch-info {
+    max-width: 280px;
+    max-height: 320px;
+    min-width: 280px;
+    min-height: 320px;
+ }
+
+  #merch .merch-info h1 {
+    font-size: 18px;
+    margin: 7px 0;
+  }
+
+  #merch .merch-info h2 {
+    font-size: 16px;
+  }
+
+  #merch .merch-info p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  #merch .merch-info a {
+    margin: 0;
+    font-size: 10px;
+  }
+
+}

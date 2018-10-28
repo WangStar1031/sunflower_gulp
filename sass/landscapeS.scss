@@ -1,0 +1,153 @@
+
+@media screen and (min-width:426px) and (max-width:1023px) and (orientation: landscape) {
+  .hover-text{
+    z-index:99
+  }
+  .content{
+    z-index:98
+  }
+  .page-name{
+    // display: block;
+  }
+  
+  .box{
+    display: none;
+    height:0%;
+    width:0%;
+  }
+
+  .active{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  #uno {
+    border: none;
+  }
+
+  #dos {
+    border: none;
+  }
+
+  #tres {
+    border: none;
+  }
+
+  #cuatro {
+    border: none;
+  }
+
+  // #music {
+  //   height: 100%;
+  //   width: 100%;
+  // }
+
+  #music a {
+    display: none;
+  }
+
+  #music iframe {
+    min-height: 230px;
+    min-width: 230px;
+    max-width: 230px;
+    max-height: 230px;
+  }
+
+  #merch {
+    // height: 100%;
+    // width: 100%;
+  }
+
+  #video iframe {
+    border: 8px solid $primaryColor;
+    width: 400px;
+    height: 225px;
+  }
+  //
+  // #merch {
+  //   height: 100%;
+  //   width: 100%;
+  // }
+
+  #merch .merch-photos a {
+    min-width: 230px;
+    min-height: 230px;
+    width: 230px;
+    height: 230px;
+    margin-right: 10px;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #merch .merch-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    min-height: 230px;
+    max-width: 180px;
+    max-width: 180px;
+    text-align: left;
+    padding: 1%;
+  }
+
+  #merch h1 {
+    font-size: 15px;
+    margin: 0 0 5px 0;
+  }
+
+  #merch h2 {
+    font-size: 13px;
+    margin: 0 0 10px 0;
+  }
+
+
+  #merch p {
+    margin: 3px 0;
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  #merch .merch-info a {
+    margin: 15px 0 0 0;
+    font-weight: bold;
+    font-size: 11px;
+    width: fit-content;
+    background-color: $outline;
+    text-decoration: none;
+    color: $primaryColor;
+    transition: 0.4s;
+    letter-spacing: 2px;
+    padding: 2% 3%;
+  }
+  //
+  // #tour {
+  //   height: 100%;
+  //   width: 100%;
+  // }
+  //
+  // #contact {
+  //   height: 100%;
+  //   width: 100%;
+  // }
+
+  #contact p {
+    min-width: 400px;
+    max-width: 400px;
+    width: 400px;
+   font-size: 18px;
+   margin-bottom: 40px;
+  }
+
+  #contact .mail {
+    font-size: 18px;
+  }
+
+  #contact .social {
+    display: none;
+  }
+
+}

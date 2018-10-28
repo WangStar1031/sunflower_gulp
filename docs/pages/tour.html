@@ -1,0 +1,36 @@
+<div class="poster"><a href="#" id="img_container" style="position: relative;"></a><style type="text/css">#img_container img {
+      /*left:0;*/
+      -webkit-transition: opacity .5s ease-in-out;
+      -moz-transition: opacity .5s ease-in-out;
+      -o-transition: opacity .5s ease-in-out;
+      transition: opacity .5s ease-in-out;
+      opacity: 0;
+      position: absolute;
+    }
+
+    #img_container img.transparent {
+      opacity:1;
+    }</style><script type="text/javascript">var images = [
+              'img/background.jpg',
+              'img/1.jpg',
+              'img/3.jpg',
+              'img/4.jpg',
+              'img/5.jpg'
+            ]
+      i = 0;
+      for( var j = 0; j < images.length; j++){
+      var strHtml = '<img id="gallery" src="' + images[j] + '" />';
+      $("#img_container").append(strHtml);
+      }
+      $("#img_container img").eq(0).addClass("transparent");
+      $("#img_container img").eq(0).css("z-index", "10");
+  // <img id="gallery" src="img/1.jpg" style="opacity: 1;">
+      document.getElementById('img_container').addEventListener('click', function() {
+          var curId = i;
+          i = i >= tees.length - 1 ? i = 0 : ++i;
+          var nextId = i;
+          $("#img_container img").eq(curId).toggleClass("transparent");
+          $("#img_container img").eq(nextId).toggleClass("transparent");
+          $("#img_container img").css("z-index", "0");
+          $("#img_container img").eq(nextId).css("z-index", "10");
+      }, false);</script></div><div class="tour-dates"><ul><li>OCT 22</li><li><a href="https://www.songkick.com/concerts/34662909-sunflowers-pt-at-jokers-pub?utm_source=1471&utm_medium=partner" target="_blank">Joker's Pub</a></li><br><li>Angers, France</li></ul><ul><li>Oct 23</li><li><a href="https://www.songkick.com/concerts/34662914-sunflowers-pt-at-canadian-cafe?utm_source=1471&utm_medium=partner" target="_blank">Canadian Café</a></li><br><li>Tours, France</li></ul><ul><li>Oct 24</li><li><a href="https://www.songkick.com/concerts/34662934-sunflowers-pt-at-le-ravelin?utm_source=1471&utm_medium=partner" target="_blank">le Ravelin</a></li><br><li>Toulouse, France</li></ul><ul><li>OCT 25</li><li><a href="http://www.songkick.com/concerts/34662944-sunflowers-pt-at-groove-bar?utm_source=1471&utm_medium=partner" target="_blank">Groove Bar</a></li><br><li>Tarragona, Spain</li></ul><ul><li>Oct 26</li><li><a href="http://www.songkick.com/concerts/35196904-sunflowers-pt-at-maravillas-club?utm_source=1471&utm_medium=partner" target="_blank">Maravillas Club</a></li><br><li>Madrid, Spain</li></ul><ul><li>Oct 27</li><li><a href="https://www.songkick.com/concerts/34662949-sunflowers-pt-at-la-fabrica-de-chocolate-club?utm_source=1471&utm_medium=partner" target="_blank">La Fábrica de Chocolate Club</a></li><br><li>Vigo, Spain</li></ul></div>

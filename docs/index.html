@@ -1,0 +1,23 @@
+<!doctype html><html><head><title>SUNFLOWERS</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,minimal-ui"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="description" content="MUSIC BY JPEGMAFIA"><meta property="og:image" content="1.png"><meta property="og:title" content="JPEGMAFIA"><meta property="og:description" content="music"><link rel="shortcut icon" href="img/favicon.ico"><link rel="apple-touch-icon" href="img/icon.png"><link rel="apple-touch-icon" sizes="76x76" href="img/icon.png"><link rel="apple-touch-icon" sizes="120x120" href="img/icon.png"><link rel="apple-touch-icon" sizes="152x152" href="img/icon.png"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Dosis:600,800" rel="stylesheet"><script type="text/javascript">(function(document,navigator,standalone) {
+      // prevents links from apps from oppening in mobile safari
+      // this javascript must be the first script in your <head>
+      if ((standalone in navigator) && navigator[standalone]) {
+          var curnode, location=document.location, stop=/^(a|html)$/i;
+          document.addEventListener('click', function(e) {
+              curnode=e.target;
+              while (!(stop).test(curnode.nodeName)) {
+                  curnode=curnode.parentNode;
+              }
+              // Condidions to do this only on links to your own app
+              // if you want all links, use if('href' in curnode) instead.
+              if('href' in curnode && ( curnode.href.indexOf('https') || ~curnode.href.indexOf(location.host) ) ) {
+                  e.preventDefault();
+                  location.href = curnode.href;
+              }
+          },false);
+      }
+  })(document,window.navigator,'standalone');</script></head><body><div id="uno" class="box active"><div class="box-table"><div class="hover-text" style="opacity: 0;"><span class="page-name">MUSIC</span></div><div class="content"><div id="music"></div></div></div></div><div id="dos" class="box"><div class="box-table"><div class="hover-text"><span class="page-name">SHOP</span></div><div class="content"><div id="merch"></div></div></div></div><div id="tres" class="box"><div class="box-table"><div class="hover-text"><span class="page-name">TOUR</span></div><div class="content"><div id="tour"></div></div></div></div><div id="cuatro" class="box"><div class="box-table"><div class="hover-text"><span class="page-name">CONTACT</span></div><div class="content"><div id="contact"></div></div></div></div><!-- Hidden elements, used to get dynamic colors ::  --><div class="transitionTime getColors"></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script><script src="js/app.js"></script><script type="text/javascript">$("#music").load('pages/music.html')
+  $("#video").load('pages/video.html')
+  $("#merch").load('pages/merch.html')
+  $("#tour").load('pages/tour.html')
+  $("#contact").load('pages/contact.html')</script></body></html>

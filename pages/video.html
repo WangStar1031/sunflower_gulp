@@ -1,0 +1,50 @@
+
+<iframe src="https://www.youtube.com/embed/?listType=playlist&list=PLQaGGFjucbg-Y8NbWFd2rSqmUnSEeKVBG&rel=0&amp;controls=0;playsinline=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- <div id="YoutubePlayer"></div>
+<script type="text/javascript">
+	// 2. This code loads the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = "http://www.youtube.com/player_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// 3. This function creates an <iframe> (and YouTube player)
+	//    after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+		console.log("onYouTubePlayerAPIReady");
+		player = new YT.Player('YoutubePlayer', {
+			height: '390',
+			width: '640',
+			videoId: '974TXFKtyls',
+			playerVars: {rel: 0},
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	}
+	var myPlayerState;
+	function onPlayerReady(){
+		console.log("onPlayerReady");
+	}
+	function onPlayerStateChange(event) {
+		console.log('onPlayerStateChange');
+		console.log(event.data);
+		// if (event.data == YT.PlayerState.PLAYING && !done) {
+		// 	// DO THIS
+		// }
+		myPlayerState = event.data;
+		switch(myPlayerState){
+			case 1:
+			console.log("PLAYING");break;
+			case 2:
+			console.log("PAUSE");break;
+		}
+	}
+
+	// if (myPlayerState == 1){
+	// // PAUSE SLIDER
+	// }
+	
+</script> -->

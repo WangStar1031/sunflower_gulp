@@ -1,0 +1,74 @@
+@media screen and (min-width:1024px) and (orientation: portrait)  {
+
+  .hover-text {
+    z-index: 99;
+  }
+
+  .content {
+    z-index: 98;
+  }
+
+  .page-name {
+    font-size: 35px;
+  }
+
+  .box {
+    display: block;
+    width: 100%;
+    height: 12%;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  #uno {
+    height: 64%;
+    bottom: 0;
+    left: 0 !important;
+    right: 0;
+    top: 0;
+    border: none;
+    border-bottom: 4px solid $outline;
+  }
+
+
+  #dos {
+    bottom: 0;
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    border: 0;
+    border-bottom: 4px solid $outline;
+  }
+
+
+
+  #tres {
+    bottom: 0;
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    border: none;
+    border-bottom: 4px solid $outline;
+  }
+
+
+  #cuatro {
+    bottom: 0;
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    border: none;
+  }
+
+
+  #music iframe {
+    min-height: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+
+
+}

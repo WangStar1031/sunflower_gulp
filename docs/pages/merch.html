@@ -1,0 +1,32 @@
+<div class="merch-photos"><a href="#!" id="img_container1" style="position: relative;"><script type="text/javascript">var tees = [
+            'img/t1.jpg',
+            'img/t2.jpg'
+             ],
+      tee_i = 0;
+      for( var j = 0; j < tees.length; j++){
+        var strHtml = '<img id="shirt" src="' + tees[j] + '" />';
+        $("#img_container1").append(strHtml);
+      }
+      $("#img_container1 img").eq(0).addClass("transparent");
+      $("#img_container1 img").eq(0).css("z-index", "10");
+      document.getElementById('img_container1').addEventListener('click', function() {
+        var curId = tee_i;
+        tee_i = tee_i >= tees.length - 1 ? tee_i = 0 : ++tee_i;
+        var nextId = tee_i;
+        $("#img_container1 img").eq(curId).toggleClass("transparent");
+        $("#img_container1 img").eq(nextId).toggleClass("transparent");
+        $("#img_container1 img").css("z-index", "0");
+        $("#img_container1 img").eq(nextId).css("z-index", "10");
+      }, false);</script></a></div><style type="text/css">#img_container1 img {
+    /*left:0;*/
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+  }
+
+  #img_container1 img.transparent {
+    opacity:1;
+  }</style><div class="merch-info"><h1>Castle Spell T-Shirt</h1><h2>$23 USD</h2><a href="#">PURCHASE</a><p>100% COTTON<br><br>Includes unlimited streaming of Castle Spell via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.<br><br>ships out within 2 days<br>limited edition of 200</p></div>
