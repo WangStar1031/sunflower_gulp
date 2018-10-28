@@ -506,7 +506,7 @@ function calcTouchEvent(){
     var xLen = touchEndPosition.x - touchStartPosition.x;
     var yLen = touchEndPosition.y - touchStartPosition.y;
     var nDir = 0;
-    if( Math.abs(yLen) >= $(window).height() / 5){
+    if( Math.abs(yLen) >= $(window).height() / 10){
         if( yLen < 0){
             console.log("next");
             nDir = 1;
