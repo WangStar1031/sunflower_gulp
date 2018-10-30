@@ -11,30 +11,56 @@
   }
   
   .box{
+    //display: none;
+    height:100%;
+    width:100%;
+    top: 100%;
+  }
+
+  .box .hover-text{
     display: none;
-    height:0%;
-    width:0%;
   }
 
   .active{
     display: block;
     height: 100%;
     width: 100%;
+    top: 0%;
   }
 
   #uno {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    bottom: 0;
     border: none;
   }
 
   #dos {
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    bottom: 0;
     border: none;
   }
 
   #tres {
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    bottom: 0;
     border: none;
   }
 
   #cuatro {
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    bottom: 0;
     border: none;
   }
 

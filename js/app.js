@@ -122,27 +122,25 @@ function activate_box($el) {
         if( $(window).width() <= 1023){
             if ($el.is('#uno')) {
                 TweenLite.to($el, siteColors.animeSpeed, {
-                    height: '100%',
-                    bottom: '0',
+                    // height: '100%',
                     top: '0%',
                     right: '0',
                     width: '100%'
                 });
                 TweenLite.to($dos, siteColors.animeSpeed, {
-                    height: '0%',
-                    bottom: '0%',
+                    // height: '0%',
                     left: '0%',
                     top: '100%',
                     width: '100%'
                 });
                 TweenLite.to($cuatro, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '0%',
                     right: '0%',
                     top: '100%',
                     width: '100%'
                 });
                 TweenLite.to($tres, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '0%',
                     left: '0%',
                     top: '100%',
                     width: '100%'
@@ -150,26 +148,25 @@ function activate_box($el) {
                 activate_elm_modification($el);
             } else if ($el.is('#dos')) {
                 TweenLite.to($el, siteColors.animeSpeed, {
-                    height: '100%',
-                    bottom: '0%',
+                    // height: '100%',
                     top: '0%',
                     left: '0%',
                     width: '100%'
                 });
                 TweenLite.to($uno, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '100%',
                     bottom: '0%',
-                    right: '0%',
+                    top: '-100%',
                     width: '100%'
                 });
                 TweenLite.to($cuatro, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '0%',
                     right: '0%',
                     top: '100%',
                     width: '100%'
                 });
                 TweenLite.to($tres, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '0%',
                     left: '0%',
                     top: '100%',
                     width: '100%'
@@ -177,53 +174,51 @@ function activate_box($el) {
                 activate_elm_modification($el);
             } else if ($el.is('#cuatro')) {
                 TweenLite.to($el, siteColors.animeSpeed, {
-                    height: '100%',
+                    // height: '100%',
                     right: '0%',
                     top: '0%',
                     width: '100%'
                 });
                 TweenLite.to($uno, siteColors.animeSpeed, {
-                    height: '0%',
-                    bottom: '0%',
+                    // height: '0%',
+                    top: '-100%',
                     right: '0%',
                     width: '100%'
                 });
                 TweenLite.to($dos, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '0%',
                     left: '0%',
-                    top: '0%',
-                    bottom: '0%',
+                    top: '-100%',
                     width: '100%'
                 });
                 TweenLite.to($tres, siteColors.animeSpeed, {
-                    height: '0%',
-                    top: '0%',
+                    // height: '0%',
+                    top: '-100%',
                     left: '0%',
-                    bottom: '0%',
                     width: '100%'
                 });
                 activate_elm_modification($el);
             } else if ($el.is('#tres')) {
                 TweenLite.to($el, siteColors.animeSpeed, {
-                    height: '100%',
+                    // height: '100%',
                     left: '0%',
                     top: '0%',
                     width: '100%'
                 });
                 TweenLite.to($uno, siteColors.animeSpeed, {
-                    height: '0%',
-                    bottom: '0%',
+                    // height: '0%',
+                    top: '-100%',
                     right: '0%',
                     width: '100%'
                 });
                 TweenLite.to($dos, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '0%',
                     left: '0%',
-                    bottom: '0%',
+                    top: '-100%',
                     width: '100%'
                 });
                 TweenLite.to($cuatro, siteColors.animeSpeed, {
-                    height: '0%',
+                    // height: '0%',
                     top: '100%',
                     right: '0%',
                     width: '100%'
@@ -426,14 +421,45 @@ function onResizeEvent(){
         orientationMobile = (orientationPortrait && $(window).width() <= 480) || (!orientationPortrait && $(window).width() <= 757);
     if( !orientationPortrait){
         if( $(window).width() <= 1023){
-            $box.css("display", "none");
-            $(".active").css("display", "block");
-            $(".active").css("width", "100%");
-            $(".active").css("height", "100%");
-            $(".active").css("left", "0");
-            $(".active").css("right", "0");
+            $box.find(".hover-text").css("display", "none");
+            $box.css('width', '100%');
+            $box.css('height', '100%');
+            $box.css('left', '0');
+            // var elemActiveId = $(".active").eq(0).attr('id');
+            // switch( elemActiveId){
+            //     case 'uno':
+            //         $uno.css('top', '0%');
+            //         $dos.css('top', '100%');
+            //         $tres.css('top', '100%');
+            //         $cuatro.css('top', '100%');
+            //     break;
+            //     case 'dos':
+            //         $uno.css('top', '-100%');
+            //         $dos.css('top', '0%');
+            //         $tres.css('top', '100%');
+            //         $cuatro.css('top', '100%');
+            //     break;
+            //     case 'tres':
+            //         $uno.css('top', '-100%');
+            //         $dos.css('top', '-10%');
+            //         $tres.css('top', '0%');
+            //         $cuatro.css('top', '100%');
+            //     break;
+            //     case 'cuatro':
+            //         $uno.css('top', '-100%');
+            //         $dos.css('top', '-100%');
+            //         $tres.css('top', '-10%');
+            //         $cuatro.css('top', '0%');
+            //     break;
+            // }
+            // $(".active").css("display", "block");
+            // $(".active").css("width", "100%");
+            // $(".active").css("height", "100%");
+            // $(".active").css("left", "0");
+            // $(".active").css("right", "0");
         } else{
-            $box.css("display", "block");
+            // $box.css("display", "block");
+            $box.find(".hover-text").css("display", "block");
             var elemActiveId = $(".active").eq(0).attr('id');
             switch(elemActiveId){
                 case 'uno':case 'dos':
@@ -479,7 +505,7 @@ function onResizeEvent(){
             }
         }
     } else{
-        $box.css("display", "block");
+        // $box.css("display", "block");
         var elemActiveId = $(".active").eq(0).attr('id');
         $box.css("height", widthForMobileSection + "%");
         $box.css("left", "0");
@@ -499,9 +525,11 @@ var touchEndPosition = {x:0, y:0};
 function calcTouchEvent(){
     var orientationPortrait = $(window).width() <= $(window).height();
     if( !orientationPortrait){
-        if( $(window).width() > 1024){
+        if( $(window).width() >= 1024){
             return;
         }
+    } else{
+        return;
     }
     var xLen = touchEndPosition.x - touchStartPosition.x;
     var yLen = touchEndPosition.y - touchStartPosition.y;
